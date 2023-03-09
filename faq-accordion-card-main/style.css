@@ -1,0 +1,124 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+body,
+h2,
+ul {
+  margin: 0;
+  padding: 20px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  width: 90%;
+  padding: 150px 20px 40px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 60px 90px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.pattern {
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+.illustration-mobile {
+  position: absolute;
+  width: 300px;
+  top: -140px;
+}
+
+.illustration-desktop {
+  display: none;
+}
+
+.illustration-box {
+  display: none;
+}
+main section {
+  width: 100%;
+}
+main section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main section ul {
+  list-style: none;
+  margin-top: 40px;
+}
+/* main section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0;
+  color: hsl(240, 6%, 50%);
+} */
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+}
+.answer-container {
+  border-bottom: 1px solid lightgray;
+}
+.hide {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    padding: 20px;
+    width: 75%;
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  main section {
+    flex: 1;
+  }
+  main section h2 {
+    text-align: left;
+  }
+
+  .illustration-mobile {
+    display: none;
+  }
+  .illustration-desktop {
+    display: initial;
+    position: absolute;
+    left: -50px;
+    width: 300px;
+  }
+
+  .illustration-box {
+    display: initial;
+    position: absolute;
+    left: -100px;
+  }
+  .pattern {
+    display: none;
+  }
+}
